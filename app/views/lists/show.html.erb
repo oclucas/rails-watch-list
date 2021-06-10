@@ -1,0 +1,36 @@
+<div class="navbar-lewagon">
+
+  <div class="website-title">
+    watch
+  </div>
+
+  <div class="menu-navbar">
+    <div class="url-navbar"><%= link_to "My lists", lists_path %></div>
+    <div class="button-navbar green-button"><%= link_to 'New bookmark', new_list_bookmark_path(@list) %></div>
+  </div>
+
+</div>
+
+<div class="container margin-show">
+
+<h1><%= @list.name %></h1>
+
+    <% @list.bookmarks.each do |bookmark|  %>
+      <div class="bookmark-content card-bookmark">
+        <div class="bookmark-poster">
+          <img src="<%= bookmark.movie.poster_url %>" >
+        </div>
+
+        <div class="bookmark-info">
+          <h2><%= bookmark.movie.title %></h2>
+          <strong>Comment :</strong> <%= bookmark.comment %> <br>
+          <strong>Movie overview :</strong> <%= bookmark.movie.overview %>
+        </div>
+
+        <div class="delete-button-placeholder">
+          <%= link_to 'X', bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" }, class: "delete-button" %>
+        </div>
+      </div>
+    <% end %>
+
+</div>

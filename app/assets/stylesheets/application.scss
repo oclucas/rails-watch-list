@@ -1,0 +1,40 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+@import "lists/index";
+
+
+img {
+  width:150px;
+  height:200px;
+}
+
+a {
+  text-decoration:none !important;
+  color: darkgreen;
+}
+
+a:hover {
+  color:darkgreen;
+  opacity: 60%;
+}
+
+
+h1,h2 {
+  font-size: 25px;
+  font-weight:600;
+  font-family:"Work Sans";
+}
+
+

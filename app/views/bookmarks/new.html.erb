@@ -1,0 +1,23 @@
+<div class="navbar-lewagon">
+
+  <div class="website-title">
+    watch
+  </div>
+
+  <div class="menu-navbar">
+    <div class="url-navbar"><%= link_to "My lists", lists_path %></div>
+    <div class="button-navbar green-button"><%= link_to @list.name, list_path(@list) %></div>
+  </div>
+
+</div>
+
+
+<h1>Create a new bookmark</h1>
+
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment %>
+  <%= f.association :movie %>
+  <%= f.submit "Create a bookmark", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to "Go back to all my lists", lists_path %>

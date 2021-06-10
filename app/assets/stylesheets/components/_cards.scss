@@ -1,0 +1,25 @@
+
+.card-list {
+  background-color: white;
+  border-radius: 5px;
+  padding:50px;
+  color: white;
+}
+
+.card-list:hover {
+  border: 1px darkgreen solid;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card-bookmark {
+  background-color: white;
+  border-radius: 5px;
+  padding:20px;
+  margin-top:10px;
+}
+

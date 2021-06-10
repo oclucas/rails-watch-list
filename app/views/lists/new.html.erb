@@ -1,0 +1,22 @@
+<div class="navbar-lewagon">
+
+  <div class="website-title">
+    watch
+  </div>
+
+  <div class="menu-navbar">
+    <div class="url-navbar"><%= link_to "My lists", lists_path %></div>
+  </div>
+
+</div>
+
+<div class="container margin-show">
+
+  <h1>Create a new list</h1>
+
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name %>
+    <%= f.submit "Create a list", class: "green-button" %>
+  <% end %>
+
+</div>

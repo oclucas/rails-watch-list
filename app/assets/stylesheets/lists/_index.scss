@@ -1,0 +1,38 @@
+@import "show";
+@import "new";
+
+.website-title {
+  font-size:30px;
+  font-weight:bold;
+  font-family:Georgia;
+  color:darkgreen;
+}
+
+.subtitle-header{
+  font-size:40px;
+  font-weight:bold;
+}
+
+.subtitle{
+  line-height:200%;
+  margin-top:30px;
+}
+
+.cards-container {
+  margin-top:50px;
+}
+
+.add-button {
+  align-items:center;
+  justify-content:center;
+}
+
+.cards a {
+    color: darkgreen;
+}
+
+.cards a:hover {
+    opacity: 60%;
+}
+
+

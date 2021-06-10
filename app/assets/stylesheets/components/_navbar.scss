@@ -1,0 +1,35 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  display:flex;
+  padding:5px 30px 5px 30px;
+  align-items:center;
+  border-bottom: 1px #e8e8e8 solid;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 1;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.menu-navbar {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+.url-navbar {
+padding:5px 10px;
+   a {
+    color: black;
+   }
+}
+
+.url-navbar > a:hover {
+  opacity:60%;
+}
+
+

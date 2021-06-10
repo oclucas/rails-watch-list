@@ -1,0 +1,36 @@
+<div class="navbar-lewagon">
+
+  <div class="website-title">
+    watch
+  </div>
+
+  <div class="menu-navbar">
+    <div class="url-navbar"><%= link_to "My lists", lists_path %></div>
+    <div class="button-navbar green-button"><%= link_to "New list", new_list_path %></div>
+  </div>
+
+</div>
+
+<div class="container text-center">
+
+  <div class="subtitle">
+    <div class="subtitle-header">Save movies.</div>
+    <div class="subtitle-header">Watch them.</div>
+  </div>
+
+  <div class="cards-container">
+
+    <div class="d-flex justify-content-between align-items-center">
+      <h1>My lists</h1>
+      <div class="add-button green-button"><%= link_to "Create a new list", new_list_path %></div>
+    </div>
+
+    <div class="cards">
+      <% @lists.each do |list| %>
+        <div class="card-list"><%= link_to list.name, list_path(list) %></li></div>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+
