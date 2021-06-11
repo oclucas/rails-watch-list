@@ -11,13 +11,14 @@
 
 </div>
 
+<div class="container margin-show">
 
 <h1>Create a new bookmark</h1>
 
-<%= simple_form_for [@list, @bookmark] do |f| %>
-  <%= f.input :comment %>
-  <%= f.association :movie %>
-  <%= f.submit "Create a bookmark", class: "btn btn-primary" %>
-<% end %>
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :comment %>
+    <%= f.association :movie %>
+    <%= f.submit "Create a bookmark", class: "green-button" %>
+  <% end %>
 
-<%= link_to "Go back to all my lists", lists_path %>
+</div>
