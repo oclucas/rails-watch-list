@@ -11,12 +11,26 @@
     }
 
     &:hover {
-      opacity:80%;
+      opacity:70%;
+      transition: 1s;
     }
+}
+
+.green-button a:hover {
+   opacity:1;
+   color:white;
 }
 
 .delete-button {
   border-radius:50%;
-  border: 1px solid darkgreen;
-  padding:5px 10px;
+  background-color: darkgreen;
+  width:10px;
+  height:10px;
+  padding:5px 8px;
+  color:white;
 }
+
+.delete-button:hover {
+  color:white;
+}
+

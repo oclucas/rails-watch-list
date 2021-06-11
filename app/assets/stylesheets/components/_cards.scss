@@ -4,22 +4,45 @@
   border-radius: 5px;
   padding:50px;
   color: white;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
 
 .card-list:hover {
   border: 1px darkgreen solid;
+  transition: 1s;
+}
+
+.card-list-no-img {
+  background-color: white;
+  border-radius: 5px;
+  padding:50px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.card-list-no-img:hover {
+  border: 1px darkgreen solid;
+  transition: 1s;
 }
 
 .cards {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
+  margin-top:20px;
 }
 
 .card-bookmark {
   background-color: white;
   border-radius: 5px;
-  padding:20px;
+  height:200px;
   margin-top:10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 

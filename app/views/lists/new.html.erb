@@ -1,7 +1,7 @@
 <div class="navbar-lewagon">
 
   <div class="website-title">
-    watch
+    <em>w</em>atch
   </div>
 
   <div class="menu-navbar">
@@ -16,6 +16,7 @@
 
   <%= simple_form_for(@list) do |f| %>
     <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
     <%= f.submit "Create a list", class: "green-button" %>
   <% end %>
 

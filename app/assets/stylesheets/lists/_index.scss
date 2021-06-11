@@ -27,12 +27,21 @@
   justify-content:center;
 }
 
-.cards a {
+.card-list a {
+  color: white;
+
+}
+
+.card-list a:hover {
+  opacity: 80%;
+  color:white;
+}
+
+
+.card-list-no-img a {
     color: darkgreen;
 }
 
-.cards a:hover {
-    opacity: 60%;
+.card-list-no-img a:hover {
+    opacity: 90%;
 }
-
-

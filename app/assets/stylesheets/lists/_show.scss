@@ -1,8 +1,32 @@
 .bookmark-content{
   display: flex;
-  justify-content:space-between;
+  position:relative;
 }
 
 .margin-show {
   margin-top:20px;
+}
+
+.poster-img {
+  width:150px;
+  height:200px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.bookmark-info {
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.delete-button-placeholder {
+  position:absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.bookmark-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
 }

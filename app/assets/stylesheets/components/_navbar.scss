@@ -17,7 +17,8 @@
 .menu-navbar {
   display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 10px;
+  text-align:right;
 }
 
 
@@ -31,5 +32,6 @@ padding:5px 10px;
 .url-navbar > a:hover {
   opacity:60%;
 }
+
 
 
